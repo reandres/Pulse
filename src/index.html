@@ -24,7 +24,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+14746738939" class="header__phone">+1 474-673-8939</a>
-                    <button class="button">Request a call</button>
+                    <button data-modal="consultation" class="button">Request a call</button>
                 </div>
             </header>
 
@@ -45,7 +45,7 @@
                         We will answer all questions
                     </div>
                 </div>
-                <button class="button button_main">book a consultation</button>
+                <button data-modal="consultation" class="button button_main">book a consultation</button>
                 <div class="promo__link">
                     or
                     <a href="#"> GO TO THE CATALOG</a>
@@ -498,6 +498,35 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Just fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="feed_form feed_form_mt25" action="#">
+                <input  name="name" required placeholder="Your name" type="text">
+                <input  name="name" required placeholder="Your phone number" type="number">
+                <input  name="name" required placeholder="Your E_mail" type="email">
+                <button class="button button_submit">order a consultation</button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order:</div>
+            <div class="modal__descr">Polar FT1 heart rate monitor</div>
+            <form class="feed_form feed_form_mt25" action="#">
+                <input  name="name" required placeholder="Your name" type="text">
+                <input  name="name" required placeholder="Your phone number" type="number">
+                <input  name="name" required placeholder="Your E_mail" type="email">
+                <button class="button button_submit">Buy</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thank you for your application!</div>
+            <div class="modal__descr">Our manager will contact you soon!</div>
+        </div>
+    </div>
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

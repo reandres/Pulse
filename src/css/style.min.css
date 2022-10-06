@@ -292,6 +292,9 @@
 .feed_form input:nth-child(3) {
   margin-bottom: 20px;
 }
+.feed_form_mt25 {
+  margin-top: 25px;
+}
 
 .carousel {
   position: relative;
@@ -624,4 +627,56 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 380px;
+  min-height: 400px;
+  background-color: #f2f2f2;
+  padding: 38px 40px 40px 40px;
+  border-radius: 2%;
+}
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  font-size: 41px;
+  line-height: 21px;
+  color: #C70101;
+  cursor: pointer;
+}
+.modal__subtitle {
+  font-weight: 700;
+  font-size: 19px;
+  color: #0D0D0D;
+  text-align: center;
+}
+.modal__descr {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0D0D0D;
+  text-align: center;
+  margin-top: 10px;
+}
+.modal_mini {
+  width: 380px;
+  min-height: 140px;
+}
+
+#consultation, #order, #thanks {
+  display: none;
 }/*# sourceMappingURL=style.min.css.map */
