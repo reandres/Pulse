@@ -1,5 +1,4 @@
 @media (max-width: 991px)
-
     body
         .promo
             padding: 21px 40px 93px 40px
@@ -34,3 +33,42 @@
 
         .pageup
             display: none !important
+@media (max-width: 767px)
+    body
+        .promo
+            .header
+                &__official
+                    display: none
+            &__header
+                font-size: 35px
+            &__subheader
+                font-size: 20px
+        .advantages
+            &__wrapper
+                display: flex
+                flex-direction: column
+            &__item
+                display: block
+                margin: 0 auto
+                margin-top: 10px
+                width: 269px
+        .catalog
+            &__content 
+                display: flex
+                justify-content: center
+                &_active
+                    display: flex
+                    justify-content: center
+        .carousel
+            display: flex
+        .slick-list 
+            width: 576px
+        .feed
+            &__item
+                display: flex
+                flex-direction: column
+            img
+                margin: 0 auto
+            &__text
+                margin-top: 10px
+                text-align: center
