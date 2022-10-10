@@ -1,41 +1,50 @@
 @media (max-width: 991px) {
-  section.promo {
-    padding: 21px 15px 93px 15px;
+  body .promo {
+    padding: 21px 40px 93px 40px;
   }
-  section.advantages {
-    padding: 75px 15px 65px 15px;
+  body .advantages {
+    padding: 75px 40px 65px 40px;
   }
-  section.consultation {
-    padding: 100px 15px 110px 15px;
+  body .advantages__item {
+    width: 210px;
   }
-  section.carousel {
-    padding: 80px 15px 100px 15px;
+  body .consultation {
+    padding: 100px 40px 110px 40px;
   }
-  section.carousel ul {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+  body .catalog {
+    padding: 100px 40px 110px 40px;
+  }
+  body .carousel ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 40px;
   }
-  section.carousel ul li {
-    list-style: none;
+  body .carousel ul li {
+    list-style-type: none;
+    margin: 0 20px;
   }
-  section.carousel ul button {
+  body .carousel ul button {
     font-size: 0;
-    width: 30px;
-    height: 30px;
-    background-color: #000;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(199, 1, 1, 0.9);
+    border: none;
     border-radius: 50%;
-    margin: 0 30px;
   }
-  section.carousel ul button:focus {
+  body .carousel ul button:focus {
     background-color: #fff;
+  }
+  body .feed {
+    padding: 100px 40px 110px 40px;
+  }
+  body .pageup {
+    display: none !important;
   }
 }
 @-webkit-keyframes heartbeat {
