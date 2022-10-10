@@ -131,7 +131,17 @@
     text-align: center;
   }
   body .promo__icons {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 305px;
   }
   body .promo .header {
     display: -webkit-box;
@@ -158,7 +168,7 @@
   }
   body .promo .button_main {
     display: block;
-    margin-top: 150px;
+    margin-top: 75px;
   }
   body .promo__link {
     display: block;
